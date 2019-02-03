@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main>
+        <section class="home">
+            <div class="home-buttons">
+                <button class="home-signIn" data-modal-btn="signIn">
+                    Sign In
+                </button>
+                <button class="home-signUp" data-modal-btn="signUp">
+                    Sign Up
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-notify">
+            <h5>  </h5>
+        </div>
+        <div class="modal-container">
+            <header class="modal-header">
+                <div class="modal-tab" data-modal-tab="signIn">
+                    <span> Sign In </span>
+                </div>
+                <div class="modal-tab" data-modal-tab="signUp">
+                   <span> New account </span>
+                </div>
+            </header>
+            <div class="modal-body">
+                <div class="modal-forms">
+                    <form data-message="Welcome back!" novalidate action="#" class="modal-form" data-modal-form="signIn">
+                        <div class="modal-input">
+                            <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="modal-input">
+                            <input type="password" class="" data-password="true" placeholder="Password">
+                            <div class="modal-eye hide">
+                                <svg class="hide" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+	<path d="M256,96C144.341,96,47.559,161.021,0,256c47.559,94.979,144.341,160,256,160c111.656,0,208.439-65.021,256-160
+		C464.441,161.021,367.656,96,256,96z M382.225,180.852c30.082,19.187,55.572,44.887,74.719,75.148
+		c-19.146,30.261-44.639,55.961-74.719,75.148C344.428,355.257,300.779,368,256,368c-44.78,0-88.428-12.743-126.225-36.852
+		c-30.08-19.188-55.57-44.888-74.717-75.148c19.146-30.262,44.637-55.962,74.717-75.148c1.959-1.25,3.938-2.461,5.929-3.65
+		C130.725,190.866,128,205.613,128,221c0,70.691,57.308,128,128,128c70.691,0,128-57.309,128-128
+		c0-15.387-2.725-30.134-7.703-43.799C378.285,178.39,380.266,179.602,382.225,180.852z M256,205c0,26.51-21.49,48-48,48
+		s-48-21.49-48-48s21.49-48,48-48S256,178.49,256,205z"/>
+    </svg>
+                            </div>
+                        </div>
+                        <button class="modal-submit">
+                            Login
+                        </button>
+                        <footer class="modal-footer" data-modal-tab="reset"  data-sub-tab="signIn">
+                            <h5> Forgot your password? </h5>
+                        </footer>
+                        <div class="modal-errors">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </form>
+                    <form data-message="Welcome new user!" novalidate action="#" class="modal-form hide" data-modal-form="signUp">
+                        <div class="modal-input">
+                            <input type="text" placeholder="Username" class="">
+                        </div>
+                        <div class="modal-input">
+                            <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="modal-input">
+                            <input type="password" class="" placeholder="Password" data-password="true">
+                            <div class="modal-eye hide">
+                                <svg class="hide" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+	<path d="M256,96C144.341,96,47.559,161.021,0,256c47.559,94.979,144.341,160,256,160c111.656,0,208.439-65.021,256-160
+		C464.441,161.021,367.656,96,256,96z M382.225,180.852c30.082,19.187,55.572,44.887,74.719,75.148
+		c-19.146,30.261-44.639,55.961-74.719,75.148C344.428,355.257,300.779,368,256,368c-44.78,0-88.428-12.743-126.225-36.852
+		c-30.08-19.188-55.57-44.888-74.717-75.148c19.146-30.262,44.637-55.962,74.717-75.148c1.959-1.25,3.938-2.461,5.929-3.65
+		C130.725,190.866,128,205.613,128,221c0,70.691,57.308,128,128,128c70.691,0,128-57.309,128-128
+		c0-15.387-2.725-30.134-7.703-43.799C378.285,178.39,380.266,179.602,382.225,180.852z M256,205c0,26.51-21.49,48-48,48
+		s-48-21.49-48-48s21.49-48,48-48S256,178.49,256,205z"/>
+    </svg>
+                            </div>
+                        </div>
+                        <div class="modal-input">
+                            <input type="password" class="" placeholder="Confirm Password" data-confirm-password="true">
+                        </div>
+                        <button class="modal-submit">
+                            Create account
+                        </button>
+                        <div class="modal-errors">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </form>
+                    <form data-message="Password will be sent to your email" novalidate action="#" class="modal-form hide" data-modal-form="reset">
+                        <h5 class="modal-title"> Lost your password? Please enter your email address. You will receive a link to create a new password. </h5>
+                        <div class="modal-input">
+                            <input type="email" placeholder="E-mail">
+                        </div>
+                        <button class="modal-submit">
+                            Reset password
+                        </button>
+                        <footer class="modal-footer" data-modal-tab="signIn" data-sub-tab="signIn">
+                            <h5> Back to log-in </h5>
+                        </footer>
+                        <div class="modal-errors">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal -->
+    <script src="./js/validator.js"></script>
+    <script src="./js/modal.js"></script>
+    <script>
+        const props = {
+            modalId: 'modal'
+        };
+        const modal = new Modal(props);
+        console.dir(modal);
+
+        const validator = new Validator(props);
+        console.dir(validator);
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@import '../base/mixins';
+
+.home {
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #343642;
+
+  &-signIn, &-signUp {
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    margin: 0 8px;
+    cursor: pointer;
+    border-radius: 18px;
+    color: var(--white-grey-font);
+    outline: none;
+    @include respond-to($phone){
+      width: 140px;
+    }
+    @include respond-to($large-desktop){
+      width: 15vw;
+      height: 6vh;
+    }
+
+  }
+
+  &-signIn {
+    background-color: transparent;
+    border: 2px solid var(--green);
+  }
+
+  &-signUp {
+    background-color: var(--green);
+    border: 1px solid transparent;
+    transition: .25s background-color linear;
+    will-change: background-color;
+
+    &:hover {
+      background-color: #2f7f91 + 20%;
+    }
+  }
+  &-buttons {
+    display: flex;
+  }
+
+}
